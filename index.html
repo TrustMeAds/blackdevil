@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cash With Devil | AI Prediction</title>
+
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1997896581132299');
+    fbq('track', 'PageView');
+    </script>
+
+    <style>
+        :root { --accent: #ff3e3e; --bg: #0a0a0a; }
+        body { margin: 0; font-family: 'Segoe UI', sans-serif; background: var(--bg); color: white; display: flex; align-items: center; justify-content: center; min-height: 100vh; overflow-x: hidden; }
+        
+        .container { width: 90%; max-width: 420px; padding: 40px 25px; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.08); border-radius: 30px; backdrop-filter: blur(20px); text-align: center; position: relative; }
+        
+        h1 { font-size: 26px; margin: 10px 0; background: linear-gradient(45deg, #ff3e3e, #ff8080); -webkit-background-clip: text; -webkit-text-fill-color: transparent; font-weight: 800; }
+        .channel-name { color: #fff; font-size: 18px; margin-bottom: 25px; font-weight: bold; }
+        
+        .signal-box { background: rgba(255, 62, 62, 0.1); border: 1px solid rgba(255, 62, 62, 0.3); border-radius: 15px; padding: 15px; margin-bottom: 30px; position: relative; }
+        .live-tag { position: absolute; top: -10px; left: 50%; transform: translateX(-50%); background: #ff3e3e; font-size: 10px; padding: 2px 10px; border-radius: 10px; font-weight: bold; }
+        
+        .btn { display: block; background: #ff3e3e; color: white; text-decoration: none; padding: 18px; border-radius: 15px; font-weight: bold; font-size: 18px; border: none; cursor: pointer; width: 100%; transition: 0.3s; box-shadow: 0 10px 20px rgba(255, 62, 62, 0.3); }
+        .btn:hover { transform: translateY(-3px); }
+
+        /* Agency Footer Link */
+        .agency-footer { margin-top: 30px; font-size: 12px; color: #555; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 15px; }
+        .agency-footer a { color: #777; text-decoration: none; font-weight: bold; transition: 0.3s; }
+        .agency-footer a:hover { color: #ff3e3e; }
+
+        /* Popup Styles */
+        #notification-popup { position: fixed; bottom: 20px; left: 20px; background: white; color: black; padding: 10px 20px; border-radius: 50px; display: flex; align-items: center; gap: 10px; font-size: 13px; font-weight: 500; transform: translateY(150%); transition: 0.5s ease-in-out; box-shadow: 0 10px 25px rgba(0,0,0,0.3); z-index: 9999; }
+        #notification-popup img { width: 25px; height: 25px; border-radius: 50%; }
+        #notification-popup.show { transform: translateY(0); }
+    </style>
+</head>
+<body>
+
+<div id="notification-popup">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733577.png" alt="Telegram">
+    <span id="popup-text">Rahul joined the channel</span>
+</div>
+
+<div class="container">
+    <div class="channel-name">ℭ𝔞𝔰𝔥 ᵂⁱ͢͢͢ᵀʰ𓆪 ᗪέꪜɪⓁ</div>
+    <h1>AI PATTERN DECODER</h1>
+    
+    <div class="signal-box">
+        <div class="live-tag">LIVE ANALYSIS</div>
+        <div style="font-size: 14px; color: #ff8080;">WIN RATE TODAY</div>
+        <div style="font-size: 28px; font-weight: 900;">98.7%</div>
+    </div>
+
+    <button id="ctaBtn" class="btn">JOIN NOW (FREE ACCESS)</button>
+    
+    <div class="agency-footer">
+        Ads Managed by <br> 
+        <a href="https://t.me/TrustMeMedia" target="_blank">Click by Trust Me Media</a>
+    </div>
+</div>
+
+<script>
+    // 1. CTA Button Logic
+    document.getElementById('ctaBtn').addEventListener('click', function() {
+        fbq('track', 'Subscribe'); 
+        this.innerText = "OPENING TELEGRAM...";
+        setTimeout(function() {
+            window.location.href = "https://t.me/+LMc8sI9aVrU1ODk1";
+        }, 1000);
+    });
+
+    // 2. Member Joining Popup Logic
+    const names = ["Rahul", "Ankit", "Deepak", "Sahil", "Priya", "Vikram", "Sandeep", "Yaman", "Aman"];
+    const popup = document.getElementById('notification-popup');
+    const popupText = document.getElementById('popup-text');
+
+    function showPopup() {
+        const randomName = names[Math.floor(Math.random() * names.length)];
+        popupText.innerText = randomName + " just joined the channel";
+        popup.classList.add('show');
+        
+        setTimeout(() => {
+            popup.classList.remove('show');
+        }, 4000);
+    }
+
+    // Har 8-10 seconds mein popup aayega
+    setInterval(showPopup, 8000);
+    setTimeout(showPopup, 2000); // Pehla popup 2 second baad
+</script>
+
+</body>
+</html>
